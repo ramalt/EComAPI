@@ -3,6 +3,7 @@ using System;
 using EComAPI.Persistence.EFCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,10 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace EComAPI.Persistence.EFCore.Migrations
 {
     [DbContext(typeof(EComDbContext))]
-    partial class EComDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240314143304_base_entity_update")]
+    partial class base_entity_update
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
