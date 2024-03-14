@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DD26FBFD-DB61-4FCA-BE3E-77F3D94DBF89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EComAPI.Domain", "Core\EComAPI.Domain\EComAPI.Domain.csproj", "{7ED99DB4-C4D0-4F21-A47C-3D77017C0988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EComAPI.Application", "Core\EComAPI.Application\EComAPI.Application.csproj", "{77D4C705-8E53-438C-8A3C-9BFCC2083AE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B6C7767D-2E91-4309-89D8-2EBB92A01281}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EComAPI.Infrastructure", "Infrastructure\EComAPI.Infrastructure\EComAPI.Infrastructure.csproj", "{6150F653-67AE-4EBD-8C68-B0C3EF385E8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EComAPI.Persistence", "Infrastructure\EComAPI.Persistence\EComAPI.Persistence.csproj", "{5665C2A2-2BB6-4A07-891B-08DA731D7CB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{D379AC8F-7757-415B-BC3F-8B7E1B3129CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EComAPI.API", "Presentation\EComAPI.API\EComAPI.API.csproj", "{E54D3C4A-C04B-429A-BCDA-D944ECB6354C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7ED99DB4-C4D0-4F21-A47C-3D77017C0988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7ED99DB4-C4D0-4F21-A47C-3D77017C0988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7ED99DB4-C4D0-4F21-A47C-3D77017C0988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7ED99DB4-C4D0-4F21-A47C-3D77017C0988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77D4C705-8E53-438C-8A3C-9BFCC2083AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77D4C705-8E53-438C-8A3C-9BFCC2083AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77D4C705-8E53-438C-8A3C-9BFCC2083AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77D4C705-8E53-438C-8A3C-9BFCC2083AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6150F653-67AE-4EBD-8C68-B0C3EF385E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6150F653-67AE-4EBD-8C68-B0C3EF385E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6150F653-67AE-4EBD-8C68-B0C3EF385E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6150F653-67AE-4EBD-8C68-B0C3EF385E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5665C2A2-2BB6-4A07-891B-08DA731D7CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5665C2A2-2BB6-4A07-891B-08DA731D7CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5665C2A2-2BB6-4A07-891B-08DA731D7CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5665C2A2-2BB6-4A07-891B-08DA731D7CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E54D3C4A-C04B-429A-BCDA-D944ECB6354C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E54D3C4A-C04B-429A-BCDA-D944ECB6354C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E54D3C4A-C04B-429A-BCDA-D944ECB6354C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E54D3C4A-C04B-429A-BCDA-D944ECB6354C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7ED99DB4-C4D0-4F21-A47C-3D77017C0988} = {DD26FBFD-DB61-4FCA-BE3E-77F3D94DBF89}
+		{77D4C705-8E53-438C-8A3C-9BFCC2083AE3} = {DD26FBFD-DB61-4FCA-BE3E-77F3D94DBF89}
+		{6150F653-67AE-4EBD-8C68-B0C3EF385E8D} = {B6C7767D-2E91-4309-89D8-2EBB92A01281}
+		{5665C2A2-2BB6-4A07-891B-08DA731D7CB3} = {B6C7767D-2E91-4309-89D8-2EBB92A01281}
+		{E54D3C4A-C04B-429A-BCDA-D944ECB6354C} = {D379AC8F-7757-415B-BC3F-8B7E1B3129CF}
+	EndGlobalSection
+EndGlobal
