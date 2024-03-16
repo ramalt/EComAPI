@@ -7,9 +7,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(opt =>
+    opt.AddDefaultPolicy(policy =>
+        policy.WithOrigins("http://localhost:4200/")
+              .AllowAnyMethod()
+              .AllowAnyHeader()));
+
 builder.Services.AddPersistence();
 
 var app = builder.Build();
+
+app.UseCors();
 
 if (app.Environment.IsDevelopment())
 {
