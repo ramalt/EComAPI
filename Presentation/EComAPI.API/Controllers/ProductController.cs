@@ -1,5 +1,6 @@
 using EComAPI.Application.Dtos.Products;
 using EComAPI.Application.Repositories.Product;
+using EComAPI.Application.RequestParameters;
 using EComAPI.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 
@@ -19,9 +20,9 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetProducts()
+    public async Task<IActionResult> GetProducts([FromQuery] Pagination pagination)
     {
-        var res = _readRepo.GetAll();
+        var res = _readRepo.GetAll(false).Skip(pagination.Page * pagination.Size).Take(pagination.Size);
         return Ok(res);
     }
 
