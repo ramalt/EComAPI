@@ -1,15 +1,20 @@
+using System.Reflection;
+using EComAPI.Application.Validations.Product;
 using EComAPI.Persistence;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<CreateProductValidation>());
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddCors(opt =>
     opt.AddDefaultPolicy(policy =>
-        policy.WithOrigins("http://localhost:4200/")
+        policy.WithOrigins("http://localhost:4200")
               .AllowAnyMethod()
               .AllowAnyHeader()));
 
